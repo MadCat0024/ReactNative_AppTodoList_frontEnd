@@ -1,6 +1,8 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import styles from './style';
+import { updateTodoList, deleteTodoList, queryAllTodoList } from '../../database/allSchema';
+
 const Task = (props) => {
   const {number} = props;
   const numberText = number < 10 ? `0${number}` : {number};
